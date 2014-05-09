@@ -1,1 +1,1 @@
-module.exports = require('./lib/port');
+module.exports = require('./lib/scan');
