@@ -1,1 +1,5 @@
+# dir
 node_modules/
+
+# files
+*.log
