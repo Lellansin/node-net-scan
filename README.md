@@ -5,16 +5,23 @@
 * scan ip
 
 
-# todo
+## todo
 add package.json
 test time out
-set it's an object, scanner.port scanner.ip etc..
 add command op
 
 
 
 #test code
 
+	npm test
+
 Output:
-    
+    scan host: www.lellansin.com ports 1~100
+    port 22 is open
+    port 21 is open
+    port 80 is open
+    scanning [=============================] 100% 100/100 0.0s
+    ports scan: 14030ms
+    open ports:22,21,80
 
