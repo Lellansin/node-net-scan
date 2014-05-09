@@ -4,15 +4,11 @@
 * scan port
 * scan ip
 
+install
 
-## todo
-add package.json
-test time out
-add command op
+    npm install net-scan
 
-
-
-#test code
+test code
 
 	npm test
 
@@ -26,3 +22,9 @@ Output:
     ports scan: 14030ms
     open ports:22,21,80
 
+
+## todo
+* test time out
+* scan array ports
+* add queue to connect
+* add command.js op
