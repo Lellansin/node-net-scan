@@ -1,0 +1,29 @@
+{
+  "name": "node-net-scan",
+  "version": "0.0.0",
+  "description": "scan ports ips",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "progress": "~1.1.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lellansin/node-net-scan.git"
+  },
+  "keywords": [
+    "scan",
+    "port"
+  ],
+  "author": "lellansin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Lellansin/node-net-scan/issues"
+  }
+}
