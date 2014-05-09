@@ -17,6 +17,7 @@ add command op
 	npm test
 
 Output:
+
     scan host: www.lellansin.com ports 1~100
     port 22 is open
     port 21 is open
