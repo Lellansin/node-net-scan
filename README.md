@@ -1,4 +1,10 @@
 
+# Net scan
+
+* scan port
+* scan ip
+
+
 # todo
 add package.json
 test time out
