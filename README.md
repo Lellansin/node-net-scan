@@ -26,5 +26,6 @@ Output:
 ## todo
 * test time out
 * scan array ports
+* scan array ips
 * add queue to connect
 * add command.js op
