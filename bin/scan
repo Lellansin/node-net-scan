@@ -1,0 +1,37 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var util = require('util');
+var program = require('commander');
+var scan = require('../lib/scan');
+
+function range(val) {
+  return val.split('~').map(Number);
+}
+
+program
+  .version('0.0.1')
+  .option('-p, --port', 'Scan ports')
+  .option('-h, --host [host]', 'Scan ips')
+  .option('-i, --ip', 'Scan ips')
+  .option('-r, --range <a>~<b>', 'Set area scan type', range)
+  .parse(process.argv);
+
+if (program.host && program.range.length == 2) {
+  console.time('ports scan');
+  scan.port({
+    host: program.host,
+    start: program.range[0],
+    end: program.range[1],
+  }, function(result) {    
+    console.timeEnd('ports scan');
+    console.log('open ports:' + result);
+  });
+  return;
+}
+
+console.log('Usage Example:');
+console.log('node scan -h 192.168.108.46 -r 0~65535');
