@@ -4,16 +4,22 @@
 * scan port
 * scan ip
 
-install
+## Installation
 
 ```shell
 npm install net-scan -g
 ```
 
-test code
+## Example
 
 ```shell
 npm test
+```
+
+Command
+
+```shell
+scan -h github.com -r 1~1000
 ```
 
 Output:
@@ -28,8 +34,7 @@ ports scan: 5245ms
 open ports: [ 80, 22, 443 ]
 ```
 
-
-## todo
+## Todo
 * scan array ports
 * scan array ips
 * add command.js op
