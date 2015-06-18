@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node ./test/test.js"
+    "test": "node ./bin/scan -h github.com -r 1~1000"
   },
   "bin": {
     "scan": "./bin/scan"
