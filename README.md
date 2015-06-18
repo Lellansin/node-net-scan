@@ -6,26 +6,30 @@
 
 install
 
-    npm install net-scan
+```shell
+npm install net-scan -g
+```
 
 test code
 
-	npm test
+```shell
+npm test
+```
 
 Output:
 
-    scan host: www.lellansin.com ports 1~100
-    port 22 is open
-    port 21 is open
-    port 80 is open
-    scanning [=============================] 100% 100/100 0.0s
-    ports scan: 14030ms
-    open ports:22,21,80
+```shell
+scan host: github.com ports 1~1000
+port 80 is open
+scanning [                    ] 0% 1/1000 	port 22 is open
+scanning [                    ] 0% 2/1000 	port 443 is open
+scanning [====================] 100% 1000/1000 	
+ports scan: 5245ms
+open ports: [ 80, 22, 443 ]
+```
 
 
 ## todo
-* test time out
 * scan array ports
 * scan array ips
-* add queue to connect
 * add command.js op
