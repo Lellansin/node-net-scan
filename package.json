@@ -1,7 +1,7 @@
 {
   "name": "net-scan",
-  "version": "0.0.1",
-  "description": "scan ports ips",
+  "version": "0.1.0",
+  "description": "scan ports & ips",
   "main": "index",
   "dependencies": {
     "async": "^1.2.1",
